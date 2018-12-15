@@ -1,0 +1,13 @@
+Makefile
+metadata.json
+icons
+/screenshots/
+nuvola-app-jamendo
+eu.tiliado.NuvolaAppJamendo.desktop
+eu.tiliado.NuvolaAppJamendo.service
+eu.tiliado.NuvolaAppJamendo.appdata.xml
+nuvola-app-jamendo.metainfo.xml
+eu.tiliado.WebRuntimeAppJamendo.desktop
+eu.tiliado.WebRuntimeAppJamendo.service
+eu.tiliado.WebRuntimeAppJamendo.appdata.xml
+nuvola-app-jamendo.metainfo.xml
