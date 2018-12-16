@@ -63,7 +63,7 @@
       title: Nuvola.queryText('.player-mini_track_information_title.js-player-name'),
       artist: Nuvola.queryText('.player-mini_track_information_artist.js-player-artistId'),
       album: null,
-      artLocation: Nuvola.queryAttribute('.js-full-player-cover-img', 'src', (src) => src ? src : null),
+      artLocation: Nuvola.queryAttribute('.js-full-player-cover-img', 'src', (src) => src || null),
       rating: null,
       length: elms.timeTotal
     }
@@ -97,7 +97,7 @@
     player.setShuffleState(shuffle)
 
     Nuvola.actions.updateEnabledFlag(ACTION_LOVE, !!elms.love)
-    Nuvola.actions.updateState(ACTION_LOVE, elms.love && elms.love.classList.contains('is-on') ? true : false)
+    Nuvola.actions.updateState(ACTION_LOVE, !!(elms.love && elms.love.classList.contains('is-on')))
 
     setTimeout(this.update.bind(this), 500)
   }
